@@ -58,7 +58,7 @@ Pinout
 | GND      | GND (17)    | power          |
 | VCC      | 3V3 (16)    | ground         |
 
-
+See [/scripts/analog.py](./scripts/digital.py)
 
 ```python
 import machine
@@ -83,7 +83,7 @@ if __name__ == "__main__":
 
 ```
 
-## Simple digital poll
+## Analog
 
 Pinout
 
@@ -94,7 +94,7 @@ Pinout
 | GND      | GND (17)    | power          |
 | VCC      | 3V3 (16)    | ground         |
 
-
+See [/scripts/analog.py](./scripts/analog.py)
 
 ```python
 import machine
