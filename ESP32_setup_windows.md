@@ -38,17 +38,15 @@ Also [1. Getting started with MicroPython on the ESP32 — MicroPython latest do
 
 ![](./assets/flash_2.png)
 
-4. test it in the REPL (this should make the led flash 3 times at 1 intervals)
+4. test it in the REPL (this should make the led flash 3 times at 1s intervals)
 
 ```python
->>> import time
+>>> from utime import sleep
 >>> from machine import Pin
 >>> led = Pin(2, Pin.OUT)
->>> for i in range(3):
-    	led.value(1)
-    	time.sleep(.5)
-    	led.value(0)
-    	time.sleep(.5)
+>>> for i in range(6):
+    	led.value(not led.value())
+    	sleep(.5)
 >>>
 ```
 
