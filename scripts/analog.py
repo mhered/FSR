@@ -14,7 +14,7 @@ def read_voltage():
     v = (raw / 4095.0) * 3.3
     return raw, v
 
-def loop(delay = 0.2):
+def loop(delay = 0.1):
     try:
         while True:
             raw, v = read_voltage()
